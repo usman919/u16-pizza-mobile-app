@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ToppingActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/header">
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/header"
+            android:text="@string/back"
+            android:textSize="20sp" />
+
+        <!-- title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/toppings_title"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <!-- Next button -->
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/header"
+            android:text="@string/next"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pizza_count"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_pizza_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/topping_done_button"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/current_pizza"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/toppings_current_pizza"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:gravity="center" />
+
+    <!-- Mushroom topping -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/topping_mushroom"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mushroom_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/mushroom_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mushroom_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Sweetcorn topping -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/topping_sweetcorn"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sweetcorn_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/sweetcorn_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sweetcorn_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Extra Cheese topping -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/topping_extra_cheese"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/extra_cheese_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/extra_cheese_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/extra_cheese_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Chicken topping -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/topping_chicken"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chicken_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/chicken_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chicken_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

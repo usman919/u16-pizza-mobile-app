@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PizzaActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/header">
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/header"
+            android:text="@string/back"
+            android:textSize="20sp" />
+
+        <!-- title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/pizza_title"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <!-- Next button -->
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/header"
+            android:text="@string/next"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Small pizza -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/pizza_small"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/small_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/small_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/small_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Medium pizza -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/pizza_medium"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/medium_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/medium_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/medium_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Large pizza -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/pizza_large"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/large_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/large_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/large_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

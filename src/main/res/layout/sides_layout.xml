@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SidesActivity">
+    
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/header">
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/header"
+            android:text="@string/back"
+            android:textSize="20sp" />
+
+        <!-- title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/sides_title"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <!-- Next button -->
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/header"
+            android:text="@string/next"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/sides_sub_heading"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <!-- Chips topping -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/sides_chips"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chips_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/chips_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chips_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Corn topping -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/sides_corn"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/corn_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/corn_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/corn_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Beans topping -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/sides_beans"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/beans_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/beans_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/beans_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <!-- Salad topping -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="@string/sides_salad"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/salad_increment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/add"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/salad_count"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/zero"
+            android:gravity="center"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/salad_decrement"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/minus"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

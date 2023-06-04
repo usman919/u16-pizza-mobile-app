@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InputInformationActivity">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/header">
+
+        <!-- Back button -->
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/header"
+            android:text="@string/back"
+            android:textSize="20sp" />
+
+        <!-- title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/input_title"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <!-- Next button -->
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/header"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/input_name_hint"
+        android:inputType="text"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/input_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_number_hint"
+        android:inputType="number"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/input_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_address_hint"
+        android:inputType="text"
+        android:layout_marginTop="30dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:text="@string/input_done_btn"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

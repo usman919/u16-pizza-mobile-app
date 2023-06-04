@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">PizzaMobileApp</string>
+
+    <!-- global -->
+    <string name="back">&lt;</string>
+    <string name="next">&gt;</string>
+    <string name="zero">0</string>
+    <string name="add">+</string>
+    <string name="minus">-</string>
+
+    <!-- Data related -->
+    <string name="pizza_total_count">0</string>
+    <string name="small_pizza_count">0</string>
+    <string name="medium_pizza_count">0</string>
+    <string name="large_pizza_count">0</string>
+    <string name="total_price">0</string>
+
+    <!-- Menu -->
+    <string name="menu_title">Menu</string>
+    <string name="menu_btn">Start</string>
+
+    <!-- Pizza -->
+    <string name="pizza_title">Pizza</string>
+    <string name="pizza_small">Small 9" : £8</string>
+    <string name="pizza_medium">Medium 11" : £10</string>
+    <string name="pizza_large">Large 15" : £14</string>
+
+    <!-- Toppings -->
+    <string name="toppings_title">Pizza Topping Selection</string>
+    <string name="topping_done_button">Done</string>
+    <string name="topping_pizzas_remaining">Pizzas remaining: </string>
+    <string name="topping_mushroom">Mushroom</string>
+    <string name="topping_sweetcorn">Sweet Corn</string>
+    <string name="topping_extra_cheese">Extra cheese</string>
+    <string name="topping_chicken">Chicken</string>
+    <string name="toppings_current_pizza">Select your topping for pizzas:</string>
+
+    <!-- Sides -->
+    <string name="sides_title">Sides</string>
+    <string name="sides_sub_heading">Would you like to have any sides?</string>
+    <string name="sides_chips">Chips</string>
+    <string name="sides_corn">Corn</string>
+    <string name="sides_beans">Beans</string>
+    <string name="sides_salad">Salad</string>
+
+    <!-- Input -->
+    <string name="input_title">Bill</string>
+    <string name="input_name_hint">Enter your name</string>
+    <string name="input_number_hint">Enter your number</string>
+    <string name="input_address_hint">Enter your address</string>
+    <string name="input_done_btn">Pay now</string>
+
+    <!-- Thanks -->
+    <string name="thanks_title">Thank you</string>
+    <string name="thanks_sub_heading">Thank you for buying</string>
+    <string name="thanks_name">Name: </string>
+    <string name="thanks_number">Number: </string>
+    <string name="thanks_address">Address: </string>
+    <string name="thanks_order">Order: </string>
+</resources>
